@@ -14,6 +14,7 @@ body {
     margin-bottom: 30px;
 }
 h1 {
+    font-weight: normal;
     font-size: 300%;
 }
 p {
@@ -24,17 +25,21 @@ a {
     color: #c94f34;
 }
 nav {
-    z-index: 9;
-    background-color: #000000;
+    z-index: 7;
+    background-color: #0C0C0C;
     width: 100vw;
     height: 4vh;
 }
-.border {
+nav.border {
+    border-bottom-style: dashed;
+    border-width: 5px;
+}
+aside.border {
     border-right-style: dashed;
     border-width: 5px;
 }
 aside {
-    z-index: 8;
+    z-index: 6;
     position: fixed;
     text-align: center;
     background-color: #ffffff00;
@@ -44,15 +49,33 @@ aside {
     padding-top: 4vh;
 }
 main {
+    z-index: 8;
     text-align: center;
     float: right;
     width: 90%;
     padding-left: 10%;
-    height: 192vh;
+    padding-top: 4vh;
 }
 main.aboutme {
-    height: 100vh;
+    height: 96vh;
+}
+main.profile {
+    height: 96vh;
+}
+main.main {
+    height: 96vh;
 }
 .grad {
-    background-image: linear-gradient(to bottom left, #0C0C0C, #481E14);
+    background-image: linear-gradient(to bottom, #0C0C0C, #481E14);
+}
+.nav {
+    z-index: 9;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-right {
+    float: right;
+}
+.nav-left {
+    float: left;
 }
